@@ -1,0 +1,11 @@
+// SYNTAX TEST "Packages/Circuits/Ibis.tmLanguage"
+
+
+| foo
+// <- comment.line.ibis
+
+[ foo ]
+// <- entity.name.ibis
+
+POWER
+// <- constant.language.ibis

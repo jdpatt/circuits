@@ -1,0 +1,11 @@
+// SYNTAX TEST "Packages/Circuits/Touchstone.tmLanguage"
+
+
+! foo
+// <- comment.line.touch
+
+# Options
+// <- 
+
+[ foo ]
+// <- entity.name.touch

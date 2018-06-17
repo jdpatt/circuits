@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>scopeName</key>
+        <string>source.touchstone</string>
+
+        <key>fileTypes</key>
+        <array>
+            <string>ts</string>
+            <string>s2p</string>
+            <string>s3p</string>
+            <string>s4p</string>
+        </array>
+
+        <key>name</key>
+        <string>Touchstone</string>
+
+        <key>patterns</key>
+        <array>
+            <dict>
+                <key>begin</key>
+                <string>\!</string>
+                <key>end</key>
+                <string>$\n?</string>
+                <key>name</key>
+                <string>comment.line.touch</string>
+            </dict>
+            <dict>
+                <key>begin</key>
+                <string>\#</string>
+                <key>end</key>
+                <string>$\n?</string>
+                <key>name</key>
+                <string>keyword.control.touch</string>
+            </dict>
+            <dict>
+                <key>begin</key>
+                <string>\[</string>
+                <key>end</key>
+                <string>\]</string>
+                <key>name</key>
+                <string>entity.name.touch</string>
+            </dict>
+        </array>
+    </dict>
+</plist>
