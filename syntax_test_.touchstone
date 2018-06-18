@@ -2,10 +2,10 @@
 
 
 ! foo
-// <- comment.line.touch
+// <- comment.line.touchstone
 
 # Options
-// <- 
+// <- keyword.control.touchstone
 
 [ foo ]
-// <- entity.name.touch
+// <- entity.name.touchstone

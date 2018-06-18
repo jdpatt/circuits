@@ -1,0 +1,21 @@
+// SYNTAX TEST "Packages/Circuits/Telesis.tmLanguage"
+
+
+(foo)
+// <- comment.line.telesis
+
+$PACKAGE
+$NETS
+// <- keyword.control.telesis
+// <- keyword.control.telesis
+
+PACKAGE ! VALUE; J1
+// <- entity.name.function.telesis
+PACKAGE ! VALUE; J1,
+// <- entity.name.function.telesis
+    J2
+//  ^ source.telesis
+
+NETNAME; U1.P2 U2.P1
+// <- support.constant.telesis
+//       ^ source.telesis

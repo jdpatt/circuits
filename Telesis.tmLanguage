@@ -3,45 +3,48 @@
 <plist version="1.0">
     <dict>
         <key>scopeName</key>
-        <string>source.touchstone</string>
+        <string>source.telesis</string>
 
         <key>fileTypes</key>
         <array>
-            <string>ts</string>
-            <string>touchstone</string>
-            <string>s2p</string>
-            <string>s3p</string>
-            <string>s4p</string>
+            <string>tel</string>
+            <string>telesis</string>
         </array>
 
         <key>name</key>
-        <string>Touchstone</string>
+        <string>Telesis</string>
 
         <key>patterns</key>
         <array>
             <dict>
                 <key>begin</key>
-                <string>\!</string>
+                <string>\(</string>
                 <key>end</key>
-                <string>$\n?</string>
+                <string>\)</string>
                 <key>name</key>
-                <string>comment.line.touchstone</string>
+                <string>comment.line.telesis</string>
             </dict>
             <dict>
                 <key>begin</key>
-                <string>\#</string>
+                <string>\$</string>
                 <key>end</key>
                 <string>$\n?</string>
                 <key>name</key>
-                <string>keyword.control.touchstone</string>
+                <string>keyword.control.telesis</string>
             </dict>
             <dict>
                 <key>begin</key>
-                <string>\[</string>
+                <string>.*!</string>
                 <key>end</key>
-                <string>\]</string>
+                <string>;</string>
                 <key>name</key>
-                <string>entity.name.touchstone</string>
+                <string>entity.name.function.telesis</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>.*;</string>
+                <key>name</key>
+                <string>support.constant.telesis</string>
             </dict>
         </array>
     </dict>

@@ -9,6 +9,7 @@
         <array>
             <string>ibis</string>
             <string>ibs</string>
+            <string>ebd</string>
         </array>
 
         <key>name</key>
@@ -26,7 +27,7 @@
             </dict>
             <dict>
                 <key>match</key>
-                <string>POWER|GND|NC|NA|CIRCUITCALL</string>
+                <string>\s(POWER|GND|NC|NA|CIRCUITCALL)\s</string>
                 <key>name</key>
                 <string>constant.language.ibis</string>
             </dict>
