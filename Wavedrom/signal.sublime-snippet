@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+{signal: [
+  {name: '${1:clk}', wave: 'p.....|...'},
+  {name: '${2:dat}', wave: 'x.345x|=.x', data: ['head', 'body', 'tail', 'data']},
+  {name: '${3:req}', wave: '0.1..0|1.0'},
+  {},
+  {name: '${4:ack}', wave: '1.....|01.'}
+]}
+]]></content>
+	<tabTrigger>signal</tabTrigger>
+	<scope>source.drom</scope>
+</snippet>

@@ -1,0 +1,100 @@
+%YAML 1.2
+---
+name: Wavedrom
+file_extensions: [drom, wjs, wd, wavedrom]
+
+scope: source.drom
+contexts:
+  main:
+    - include: value
+
+  comments:
+    - match: /\*\*(?!/)
+      scope: punctuation.definition.comment.drom
+      push:
+        - meta_scope: comment.block.documentation.drom
+        - match: \*/
+          pop: true
+    - match: /\*
+      scope: punctuation.definition.comment.drom
+      push:
+        - meta_scope: comment.block.drom
+        - match: \*/
+          pop: true
+    - match: (//).*$\n?
+      scope: comment.line.double-slash.js
+      captures:
+        1: punctuation.definition.comment.drom
+  constant:
+    - match: \b(?:true|false|null)\b
+      scope: constant.language.drom
+  number:
+    # handles integer and decimal numbers
+    - match: |-
+        (?x:         # turn on extended mode
+          (?:
+            0        # a zero
+            |        # ...or...
+            [1-9]    # a 1-9 character
+            \d*      # followed by zero or more digits
+          )
+          (?:
+            (?:
+              \.     # a period
+              \d+    # followed by one or more digits
+            )?
+            (?:
+              [eE]   # an e character
+              [+-]?  # followed by an option +/-
+              \d+    # followed by one or more digits
+            )?       # make exponent optional
+          )?         # make decimal portion optional
+        )
+      scope: constant.numeric.drom
+  signal:
+    - match: 'signal'
+      scope: keyword.control.drom
+
+  types:
+    - match: 'name|wave|period|phase|node|edge'
+      scope: storage.type.drom
+
+  config:
+    - match: 'config'
+      scope: entity.name.drom
+
+  string:
+    - match: '"'
+      scope: punctuation.definition.string.begin.drom
+      push: inside-string
+  inside-string:
+    - meta_scope: string.quoted.double.drom
+    - match: '"'
+      scope: punctuation.definition.string.end.drom
+      pop: true
+    - include: string-escape
+    - match: $\n?
+      scope: invalid.illegal.unclosed-string.drom
+      pop: true
+  string-escape:
+    - match: |-
+        (?x:                # turn on extended mode
+          \\                # a literal backslash
+          (?:               # ...followed by...
+            ["\\/bfnrt]     # one of these characters
+            |               # ...or...
+            u               # a u
+            [0-9a-fA-F]{4}  # and four hex digits
+          )
+        )
+      scope: constant.character.escape.drom
+    - match: \\.
+      scope: invalid.illegal.unrecognized-string-escape.drom
+  value:
+    - include: constant
+    - include: number
+    - include: string
+    - include: signal
+    - include: config
+    - include: types
+    - include: comments

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+"node" : "...${1:a}...${2:b}..${3:C}..."
+]]></content>
+	<tabTrigger>node</tabTrigger>
+	<scope>source.drom</scope>
+</snippet>

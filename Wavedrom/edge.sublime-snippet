@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+"edge" : : ["a->b edge 1", "b-~>c My Second Edge"]
+]]></content>
+	<tabTrigger>edge</tabTrigger>
+	<scope>source.drom</scope>
+</snippet>
