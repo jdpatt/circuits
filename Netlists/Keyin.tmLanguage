@@ -32,7 +32,7 @@
                     <key>1</key>
                     <dict>
                         <key>name</key>
-                        <string>constant.language.kyn</string>
+                        <string>support.constant.kyn</string>
                     </dict>
                 </dict>
             </dict>
@@ -41,23 +41,6 @@
                 <string>%.+</string>
                 <key>name</key>
                 <string>keyword.control.kyn</string>
-            </dict>
-            <dict>
-                <key>match</key>
-                <string>\\(\S+)\\-\\(\S+)\\</string>
-                <key>captures</key>
-                <dict>
-                    <key>1</key>
-                    <dict>
-                        <key>name</key>
-                        <string>support.constant.kyn</string>
-                    </dict>
-                    <key>2</key>
-                    <dict>
-                        <key>name</key>
-                        <string>variable.language.kyn</string>
-                    </dict>
-                </dict>
             </dict>
             <dict>
                 <key>match</key>

@@ -6,20 +6,14 @@
 // <- keyword.control.kyn
 %Prior=1
 // ^^^^ keyword.control.kyn
-//     ^ constant.language.kyn
+//     ^ support.constant.kyn
 
 %page=CPU
 \$12N5137\  \C565\-\1\ \C567\-\1\ \U31\-\14\ \C566\-\1\ \R366\-\1\ \C681\-\1\ 
 // ^^^^^^ entity.name.kyn
-//           ^^^^ support.constant.kyn
-//                  ^ variable.language.kyn
-//                      ^^^^ support.constant.kyn
-//                             ^ variable.language.kyn
+//           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.kyn
 *  \U31\-\5\ \U31\-\18\ \U31\-\9\ \FB15\-\1\ \C675\-\1\ 
-//  ^^^ support.constant.kyn
-//        ^ variable.language.kyn
-//            ^^^ support.constant.kyn
-//                  ^^ variable.language.kyn
+// <- source.kyn
 
 %Part
 // <- keyword.control.kyn
