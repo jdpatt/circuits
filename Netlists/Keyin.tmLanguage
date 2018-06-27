@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>scopeName</key>
+        <string>source.kyn</string>
+
+        <key>fileTypes</key>
+        <array>
+            <string>keyin</string>
+            <string>kyn</string>
+        </array>
+
+        <key>name</key>
+        <string>Keyin</string>
+
+        <key>patterns</key>
+        <array>
+            <dict>
+                <key>match</key>
+                <string>;;.+</string>
+                <key>name</key>
+                <string>comment.line.kyn</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>%.+=(.+)</string>
+                <key>name</key>
+                <string>keyword.control.kyn</string>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>constant.language.kyn</string>
+                    </dict>
+                </dict>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>%.+</string>
+                <key>name</key>
+                <string>keyword.control.kyn</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>\\(\S+)\\-\\(\S+)\\</string>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>support.constant.kyn</string>
+                    </dict>
+                    <key>2</key>
+                    <dict>
+                        <key>name</key>
+                        <string>variable.language.kyn</string>
+                    </dict>
+                </dict>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>^\\(\S+)\\</string>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>entity.name.kyn</string>
+                    </dict>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>

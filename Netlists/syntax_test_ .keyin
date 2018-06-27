@@ -1,0 +1,30 @@
+// SYNTAX TEST "Packages/Circuits/Netlists/Keyin.tmLanguage"
+
+;; V4.1.0
+// <- comment.line.kyn
+%net
+// <- keyword.control.kyn
+%Prior=1
+// ^^^^ keyword.control.kyn
+//     ^ constant.language.kyn
+
+%page=CPU
+\$12N5137\  \C565\-\1\ \C567\-\1\ \U31\-\14\ \C566\-\1\ \R366\-\1\ \C681\-\1\ 
+// ^^^^^^ entity.name.kyn
+//           ^^^^ support.constant.kyn
+//                  ^ variable.language.kyn
+//                      ^^^^ support.constant.kyn
+//                             ^ variable.language.kyn
+*  \U31\-\5\ \U31\-\18\ \U31\-\9\ \FB15\-\1\ \C675\-\1\ 
+//  ^^^ support.constant.kyn
+//        ^ variable.language.kyn
+//            ^^^ support.constant.kyn
+//                  ^^ variable.language.kyn
+
+%Part
+// <- keyword.control.kyn
+\JACK_2X4_MALE\  \J16\ 
+// ^^^^^^^^^^^ entity.name.kyn
+//                ^^^ source.kyn
+*  \U72\ \U75\ \U74\ \U77\ 
+// <- source.kyn
