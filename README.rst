@@ -17,3 +17,7 @@ Syntaxes that are supported
 - `Telesis <https://designcontent.live.altium.com/PluginDetail/Telesis>`_
 - `Hyperlynx <https://www.mentor.com/pcb/hyperlynx/>`_
 - `Wavedrom <https://wavedrom.com/>`_
+
+Other Related Packages
+---------------
+`Spice Syntax Package <https://github.com/leoheck/sublime-spice>`_
