@@ -1,0 +1,6 @@
+// SYNTAX TEST "Packages/Circuits/Wavedrom/wavedrom.sublime-syntax"
+{signal: [
+// ^^^^ keyword.control.drom
+  {name: 'clk', wave: 'p.....|...'} {data:},
+// ^^^^  storage.type.drom
+]}

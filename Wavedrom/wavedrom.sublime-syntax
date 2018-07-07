@@ -52,12 +52,14 @@ contexts:
         )
       scope: constant.numeric.drom
   signal:
-    - match: 'signal'
-      scope: keyword.control.drom
+    - match: '(signal|head|foot):'
+      captures:
+        1: keyword.control.drom
 
   types:
-    - match: 'name|wave|period|phase|node|edge'
-      scope: storage.type.drom
+    - match: '(name|wave|period|phase|node|edge|data):'
+      captures:
+        1: storage.type.drom
 
   config:
     - match: 'config'
