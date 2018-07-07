@@ -2,3 +2,5 @@ Changelog:
 
 0.1.0:
     Initial Release
+
+Got a file type that you would like to see? Submit an issue or pull request on github.

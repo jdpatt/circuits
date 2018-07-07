@@ -13,7 +13,7 @@ Installation is performed via Package Control.
 - [Hyperlynx](https://www.mentor.com/pcb/hyperlynx/)
 - [Wavedrom](https://wavedrom.com/)
 
-## Other Packages
+## Other Related Packages
 [Spice Syntax Package](https://github.com/leoheck/sublime-spice)
 
 ## Contributing
