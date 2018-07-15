@@ -1,0 +1,32 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Value Change Dump
+scopeName: source.vcd
+fileTypes: [.vcd]
+uuid: 09dbb937-7e19-4380-813c-55ac9b8f6d4d
+
+patterns:
+- comment: Declaration Keyword
+  name: variable.complex.vcd
+  contentName: string.other.vcd
+  begin: ^(\$(comment|date|enddefinitions|scope|timescale|upscope|var|version|vcdclose))
+  beginCaptures:
+    '1': {name: constant.language.vcd}
+  end: (\$end)
+  endCaptures:
+    '1': {name: constant.language.vcd}
+
+- comment: Simulation Keyword
+  name: variable.complex.vcd
+  contentName: entity.name.vcd
+  begin: ^(\$(dumpall|dumpoff|dumpon|dumpvars|dumpports|dumpportsoff|dumpportson|dumpportsall))
+  beginCaptures:
+    '1': {name: constant.language.vcd}
+  end: (\$end)
+  endCaptures:
+    '1': {name: constant.language.vcd}
+  
+
+- comment: Capture time markers
+  name: support.constant.vcd
+  match: ^#\d+

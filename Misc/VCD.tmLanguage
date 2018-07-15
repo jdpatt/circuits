@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>.vcd</string>
+	</array>
+	<key>name</key>
+	<string>Value Change Dump</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>^(\$(comment|date|enddefinitions|scope|timescale|upscope|var|version|vcdclose))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.vcd</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Declaration Keyword</string>
+			<key>contentName</key>
+			<string>string.other.vcd</string>
+			<key>end</key>
+			<string>(\$end)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.vcd</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>variable.complex.vcd</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\$(dumpall|dumpoff|dumpon|dumpvars|dumpports|dumpportsoff|dumpportson|dumpportsall))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.vcd</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Simulation Keyword</string>
+			<key>contentName</key>
+			<string>entity.name.vcd</string>
+			<key>end</key>
+			<string>(\$end)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language.vcd</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>variable.complex.vcd</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Capture time markers</string>
+			<key>match</key>
+			<string>^#\d+</string>
+			<key>name</key>
+			<string>support.constant.vcd</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.vcd</string>
+	<key>uuid</key>
+	<string>09dbb937-7e19-4380-813c-55ac9b8f6d4d</string>
+</dict>
+</plist>

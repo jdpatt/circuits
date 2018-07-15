@@ -1,0 +1,23 @@
+// SYNTAX TEST "Packages/Circuits/Misc/vcd.tmLanguage"
+
+$date
+// <- variable.complex.vcd constant.language.vcd
+   Date text. For example: November 11, 2009.
+// <- variable.complex.vcd string.other.vcd
+$end
+// <- variable.complex.vcd constant.language.vcd
+$timescale 1ps $end
+// ^^^^^^^
+//         ^^^^ variable.complex.vcd string.other.vcd
+//             ^^^^ variable.complex.vcd constant.language.vcd
+$upscope $end
+// <- variable.complex.vcd constant.language.vcd
+$enddefinitions $end
+$dumpvars
+bxxxxxxxx #
+// <- variable.complex.vcd entity.name.vcd
+$end
+#0
+// <- support.constant.vcd
+b10000001 #
+// <- source.vcd
