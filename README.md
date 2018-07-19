@@ -10,6 +10,7 @@ Installation is performed via Package Control.
 - [Ibis](https://ibis.org/)
 - [Touchstone](https://ibis.org/)
 - [Telesis aka Allergo Netlist](https://www.cadence.com/)
+- [Keyin Netlist](https://www.mentor.com/pcb/pads)
 - [Hyperlynx](https://www.mentor.com/pcb/hyperlynx/)
 - [Wavedrom](https://wavedrom.com/)
 
