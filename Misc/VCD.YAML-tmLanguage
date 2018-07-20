@@ -2,7 +2,7 @@
 ---
 name: Value Change Dump
 scopeName: source.vcd
-fileTypes: [.vcd]
+fileTypes: [vcd]
 uuid: 09dbb937-7e19-4380-813c-55ac9b8f6d4d
 
 patterns:

@@ -1,51 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>scopeName</key>
-        <string>source.telesis</string>
-
-        <key>fileTypes</key>
-        <array>
-            <string>tel</string>
-            <string>telesis</string>
-        </array>
-
-        <key>name</key>
-        <string>Telesis</string>
-
-        <key>patterns</key>
-        <array>
-            <dict>
-                <key>begin</key>
-                <string>\(</string>
-                <key>end</key>
-                <string>\)</string>
-                <key>name</key>
-                <string>comment.line.telesis</string>
-            </dict>
-            <dict>
-                <key>begin</key>
-                <string>\$</string>
-                <key>end</key>
-                <string>$\n?</string>
-                <key>name</key>
-                <string>keyword.control.telesis</string>
-            </dict>
-            <dict>
-                <key>begin</key>
-                <string>.*!</string>
-                <key>end</key>
-                <string>;</string>
-                <key>name</key>
-                <string>entity.name.function.telesis</string>
-            </dict>
-            <dict>
-                <key>match</key>
-                <string>.*;</string>
-                <key>name</key>
-                <string>support.constant.telesis</string>
-            </dict>
-        </array>
-    </dict>
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>tel</string>
+		<string>telesis</string>
+	</array>
+	<key>name</key>
+	<string>Telesis Netlist</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>\(</string>
+			<key>comment</key>
+			<string>Comment patterns</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>comment.line.telesis</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\$</string>
+			<key>comment</key>
+			<string>Keywords</string>
+			<key>end</key>
+			<string>$\n?</string>
+			<key>name</key>
+			<string>keyword.control.telesis</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>.*!</string>
+			<key>comment</key>
+			<string>Package Names</string>
+			<key>end</key>
+			<string>;</string>
+			<key>name</key>
+			<string>entity.name.function.telesis</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Net Names</string>
+			<key>match</key>
+			<string>.*;</string>
+			<key>name</key>
+			<string>support.constant.telesis</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.telesis</string>
+	<key>uuid</key>
+	<string>2a11ba63-22b7-41e8-a9b7-7b63e97ce8b8</string>
+</dict>
 </plist>

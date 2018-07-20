@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/Circuits/Ibis/Touchstone.tmLanguage"
+// SYNTAX TEST "Packages/Circuits/ibis/touchstone.tmLanguage"
 
 
 ! foo
@@ -8,4 +8,7 @@
 // <- keyword.control.touchstone
 
 [ foo ]
+// <- entity.name.touchstone
+
+[foo]
 // <- entity.name.touchstone

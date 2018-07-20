@@ -6,16 +6,24 @@ Sublime Text syntax highlighting and snippets for different electronic design re
 ## Installation
 Installation is performed via Package Control.
 
-## Supported
+### Supported
+
+#### Simulation
+- [Hyperlynx](https://www.mentor.com/pcb/hyperlynx/)
 - [Ibis](https://ibis.org/)
 - [Touchstone](https://ibis.org/)
-- [Telesis aka Allergo Netlist](https://www.cadence.com/)
+- [Value Change Dump](https://en.wikipedia.org/wiki/Value_change_dump)
+
+#### Netlists
 - [Keyin Netlist](https://www.mentor.com/pcb/pads)
-- [Hyperlynx](https://www.mentor.com/pcb/hyperlynx/)
+- [Telesis aka Allergo Netlist](https://www.cadence.com/)
+
+#### Documentation
 - [Wavedrom](https://wavedrom.com/)
 
 ## Other Related Packages
-[Spice Syntax Package](https://github.com/leoheck/sublime-spice)
+- [Spice Syntax Package](https://github.com/leoheck/sublime-spice)
+- [BSDL is a subset of VHDL](https://packagecontrol.io/packages/VHDL)
 
 ## Contributing
 Got a file type that you would like to see?  Submit an issue or pull request on github.

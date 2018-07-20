@@ -1,6 +1,6 @@
-Changelog:
+Thanks for installing circuits!
 
 0.1.0:
-    Initial Release
+  - Initial Release
 
 Got a file type that you would like to see? Submit an issue or pull request on github.

@@ -1,59 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>scopeName</key>
-        <string>source.kyn</string>
-
-        <key>fileTypes</key>
-        <array>
-            <string>keyin</string>
-            <string>kyn</string>
-        </array>
-
-        <key>name</key>
-        <string>Keyin</string>
-
-        <key>patterns</key>
-        <array>
-            <dict>
-                <key>match</key>
-                <string>;;.+</string>
-                <key>name</key>
-                <string>comment.line.kyn</string>
-            </dict>
-            <dict>
-                <key>match</key>
-                <string>%.+=(.+)</string>
-                <key>name</key>
-                <string>keyword.control.kyn</string>
-                <key>captures</key>
-                <dict>
-                    <key>1</key>
-                    <dict>
-                        <key>name</key>
-                        <string>support.constant.kyn</string>
-                    </dict>
-                </dict>
-            </dict>
-            <dict>
-                <key>match</key>
-                <string>%.+</string>
-                <key>name</key>
-                <string>keyword.control.kyn</string>
-            </dict>
-            <dict>
-                <key>match</key>
-                <string>^\\(\S+)\\</string>
-                <key>captures</key>
-                <dict>
-                    <key>1</key>
-                    <dict>
-                        <key>name</key>
-                        <string>entity.name.kyn</string>
-                    </dict>
-                </dict>
-            </dict>
-        </array>
-    </dict>
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>keyin</string>
+		<string>kyn</string>
+	</array>
+	<key>name</key>
+	<string>Keyin Netlist</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Comment patterns</string>
+			<key>match</key>
+			<string>;;.+</string>
+			<key>name</key>
+			<string>comment.line.kyn</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.constant.kyn</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Keywords with Values</string>
+			<key>match</key>
+			<string>\%.+=(.+)</string>
+			<key>name</key>
+			<string>keyword.control.kyn</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords</string>
+			<key>match</key>
+			<string>\%.+</string>
+			<key>name</key>
+			<string>keyword.control.kyn</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>.*!</string>
+			<key>comment</key>
+			<string>Package Names</string>
+			<key>end</key>
+			<string>;</string>
+			<key>name</key>
+			<string>entity.name.function.kyn</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.kyn</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Net Names</string>
+			<key>match</key>
+			<string>^\\(.*?)\\</string>
+			<key>name</key>
+			<string>support.constant.kyn</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.kyn</string>
+	<key>uuid</key>
+	<string>2a11ba63-22b7-41e8-a9b7-7b63e97ce8b8</string>
+</dict>
 </plist>

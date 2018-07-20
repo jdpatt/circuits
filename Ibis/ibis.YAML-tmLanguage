@@ -1,0 +1,20 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Ibis
+scopeName: source.ibis
+fileTypes: [ibs, ibis, ebd]
+
+patterns:
+  - comment: Comment
+    name: comment.line.ibis
+    begin: \|
+    end: $\n?
+
+  - comment: Reserved Words
+    name: constant.language.ibis
+    match: \s(POWER|GND|NC|NA|CIRCUITCALL)\s
+
+  - comment: Keywords
+    name: entity.name.ibis
+    begin: \[
+    end: \]

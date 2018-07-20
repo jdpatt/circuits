@@ -1,0 +1,21 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Touchstone
+scopeName: source.touchstone
+fileTypes: [ts, touchstone, s2p, s3p, s4p]
+
+patterns:
+  - comment: Comment
+    name: comment.line.touchstone
+    begin: \!
+    end: $\n?
+
+  - comment: Options
+    name: keyword.control.touchstone
+    begin: \#
+    end: $\n?
+
+  - comment: Keywords
+    name: entity.name.touchstone
+    begin: \[
+    end: \]

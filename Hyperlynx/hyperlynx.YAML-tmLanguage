@@ -1,0 +1,38 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Hyperlynx
+scopeName: source.hyp
+fileTypes: [hyperlynx, hyp, bbd, bud, ddr, eds, dcs, ref]
+
+patterns:
+  - comment: Comment
+    name: comment.line.hyp
+    begin: \*
+    end: $\n?
+
+  - comment: Comment
+    name: comment.line.hyp
+    begin: \\\\
+    end: $\n?
+
+  - comment: Sections
+    name: source.hyp
+    contentName: source.hyp
+    begin: ^\{([^\}=]+)((=)([^\}]+))?
+    beginCaptures:
+      '1': {name: entity.name.tag.hyp}
+      '4': {name: string.hyp}
+    end: (^\}\n)|(\}$\n?)
+    patterns:
+    - comment: Line Type
+      name: source.hyp
+      match: \((\S+)
+      captures:
+        '1': {name: entity.name.hyp}
+
+    - comment: Content
+      name: source.hyp
+      match: (\S+)(=)([^ \)]+)?
+      captures:
+        '1': {name: storage.type.hyp}
+        '2': {name: constant.language.hyp}

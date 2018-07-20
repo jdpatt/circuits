@@ -1,0 +1,4 @@
+0.2.0: 
+  - Moved to PackageDev and YAML over manually crafting xml plist pairs.  With that I've changed 
+    some of the matching patterns since its easier to map and test.
+  - Added value change dump file support.

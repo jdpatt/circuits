@@ -1,48 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>scopeName</key>
-        <string>source.touchstone</string>
-
-        <key>fileTypes</key>
-        <array>
-            <string>ts</string>
-            <string>touchstone</string>
-            <string>s2p</string>
-            <string>s3p</string>
-            <string>s4p</string>
-        </array>
-
-        <key>name</key>
-        <string>Touchstone</string>
-
-        <key>patterns</key>
-        <array>
-            <dict>
-                <key>begin</key>
-                <string>\!</string>
-                <key>end</key>
-                <string>$\n?</string>
-                <key>name</key>
-                <string>comment.line.touchstone</string>
-            </dict>
-            <dict>
-                <key>begin</key>
-                <string>\#</string>
-                <key>end</key>
-                <string>$\n?</string>
-                <key>name</key>
-                <string>keyword.control.touchstone</string>
-            </dict>
-            <dict>
-                <key>begin</key>
-                <string>\[</string>
-                <key>end</key>
-                <string>\]</string>
-                <key>name</key>
-                <string>entity.name.touchstone</string>
-            </dict>
-        </array>
-    </dict>
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>ts</string>
+		<string>touchstone</string>
+		<string>s2p</string>
+		<string>s3p</string>
+		<string>s4p</string>
+	</array>
+	<key>name</key>
+	<string>Touchstone</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>\!</string>
+			<key>comment</key>
+			<string>Comment</string>
+			<key>end</key>
+			<string>$\n?</string>
+			<key>name</key>
+			<string>comment.line.touchstone</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\#</string>
+			<key>comment</key>
+			<string>Options</string>
+			<key>end</key>
+			<string>$\n?</string>
+			<key>name</key>
+			<string>keyword.control.touchstone</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\[</string>
+			<key>comment</key>
+			<string>Keywords</string>
+			<key>end</key>
+			<string>\]</string>
+			<key>name</key>
+			<string>entity.name.touchstone</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.touchstone</string>
+</dict>
 </plist>

@@ -1,44 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>scopeName</key>
-        <string>source.ibis</string>
-
-        <key>fileTypes</key>
-        <array>
-            <string>ibis</string>
-            <string>ibs</string>
-            <string>ebd</string>
-        </array>
-
-        <key>name</key>
-        <string>Ibis</string>
-
-        <key>patterns</key>
-        <array>
-            <dict>
-                <key>begin</key>
-                <string>\|</string>
-                <key>end</key>
-                <string>$\n?</string>
-                <key>name</key>
-                <string>comment.line.ibis</string>
-            </dict>
-            <dict>
-                <key>match</key>
-                <string>\s(POWER|GND|NC|NA|CIRCUITCALL)\s</string>
-                <key>name</key>
-                <string>constant.language.ibis</string>
-            </dict>
-            <dict>
-                <key>begin</key>
-                <string>\[</string>
-                <key>end</key>
-                <string>\]</string>
-                <key>name</key>
-                <string>entity.name.ibis</string>
-            </dict>
-        </array>
-    </dict>
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>ibs</string>
+		<string>ibis</string>
+		<string>ebd</string>
+	</array>
+	<key>name</key>
+	<string>Ibis</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>\|</string>
+			<key>comment</key>
+			<string>Comment</string>
+			<key>end</key>
+			<string>$\n?</string>
+			<key>name</key>
+			<string>comment.line.ibis</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Reserved Words</string>
+			<key>match</key>
+			<string>\s(POWER|GND|NC|NA|CIRCUITCALL)\s</string>
+			<key>name</key>
+			<string>constant.language.ibis</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\[</string>
+			<key>comment</key>
+			<string>Keywords</string>
+			<key>end</key>
+			<string>\]</string>
+			<key>name</key>
+			<string>entity.name.ibis</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.ibis</string>
+</dict>
 </plist>

@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/Circuits/Misc/vcd.tmLanguage"
+// SYNTAX TEST "Packages/Circuits/misc/vcd.tmLanguage"
 
 $date
 // <- variable.complex.vcd constant.language.vcd

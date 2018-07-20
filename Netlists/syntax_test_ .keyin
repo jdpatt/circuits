@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/Circuits/Netlists/Keyin.tmLanguage"
+// SYNTAX TEST "Packages/Circuits/netlists/keyin.tmLanguage"
 
 ;; V4.1.0
 // <- comment.line.kyn
@@ -22,3 +22,7 @@
 //                ^^^ source.kyn
 *  \U72\ \U75\ \U74\ \U77\ 
 // <- source.kyn
+
+
+\JACK_2X4 MALE\  \J16\ 
+// ^^^^^^^^^^^ entity.name.kyn

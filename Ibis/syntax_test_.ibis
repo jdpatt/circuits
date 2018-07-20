@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/Circuits/Ibis/Ibis.tmLanguage"
+// SYNTAX TEST "Packages/Circuits/ibis/ibis.tmLanguage"
 
 
 | foo
@@ -6,7 +6,7 @@
 
 [ Version ] 2.0
 // <- entity.name.ibis
-//          ^ source.ibis
+//          ^^^ source.ibis
 
  POWER
 // <- constant.language.ibis

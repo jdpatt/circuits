@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/Circuits/Hyperlynx/Hyperlynx.tmLanguage"
+// SYNTAX TEST "Packages/Circuits/hyperlynx/hyperlynx.tmLanguage"
 
 
 * User Comment
@@ -8,30 +8,32 @@
 // <- comment.line.hyp
 
 {VERSION=2.01
-// ^^^^^ entity.name.function.hyp
-//       ^^^^ support.constant.hyp
+// ^^^^^ source.hyp entity.name.tag.hyp
+//       ^^^^^ source.hyp string.hyp
 }
 
 {BOARD
-// ^^^ entity.name.function.hyp
+// ^^^^ source.hyp entity.name.tag.hyp
   (PERIMETER_SEGMENT X1=-0.190500 Y1=0.000000 X2=10.350500 Y2=0.000000)
+// ^^^^^^^^^^^^^^^^^ source.hyp source.hyp source.hyp entity.name.hyp
+//                   ^^ source.hyp source.hyp source.hyp storage.type.hyp
+//                     ^ source.hyp source.hyp source.hyp constant.language.hyp
+//                      ^^^^^^^^^ source.hyp source.hyp source.hyp
 }
 
 {NET="12V"
-// ^ entity.name.function.hyp
-//    ^^^ support.constant.hyp
+// ^ source.hyp entity.name.tag.hyp
+//   ^^^^^^ source.hyp string.hyp
     (PARAM CHECKED=0 VMAX=5.0% IMAX=1.5e+007 IVIA=1)
 }
 
 {REPORTTYPE=0}
-// ^^^^^^^^ entity.name.function.hyp
-//          ^ support.constant.hyp
-//           ^ source.hyp
+// ^^^^^^^^ source.hyp entity.name.tag.hyp
+//          ^ source.hyp string.hyp
 
 {BATCH_DCDROP_SESSION}
-// ^ keyword.control.hyp
+// ^^^^^^^^^^^^^^^^^^ source.hyp entity.name.tag.hyp
 
 {DESIGN="example.hyp"}
-// ^^^^ entity.name.function.hyp
-//       ^^^^^^^^^^^ support.constant.hyp
-//                   ^ source.hyp
+// ^^^^ source.hyp entity.name.tag.hyp
+//      ^^^^^^^^^^^^^ source.hyp string.hyp

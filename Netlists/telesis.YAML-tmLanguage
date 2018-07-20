@@ -1,0 +1,26 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Telesis Netlist
+scopeName: source.telesis
+fileTypes: [tel, telesis]
+uuid: 2a11ba63-22b7-41e8-a9b7-7b63e97ce8b8
+
+patterns:
+  - comment: Comment patterns
+    name: comment.line.telesis
+    begin: \(
+    end: \)
+
+  - comment: Keywords
+    name: keyword.control.telesis
+    begin: \$
+    end: $\n?
+
+  - comment: Package Names
+    name: entity.name.function.telesis
+    begin: .*!
+    end: ;
+
+  - comment: Net Names
+    name: support.constant.telesis
+    match: .*;

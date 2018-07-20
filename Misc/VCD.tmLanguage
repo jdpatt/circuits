@@ -4,7 +4,7 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>.vcd</string>
+		<string>vcd</string>
 	</array>
 	<key>name</key>
 	<string>Value Change Dump</string>
