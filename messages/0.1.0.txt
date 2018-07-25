@@ -1,0 +1,4 @@
+0.1.0:
+  - Initial Release
+  - Support for simulation models such as Ibis, Spice or Hyperlynx.
+  - Support for netlists such as keyin and telesis.
