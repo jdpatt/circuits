@@ -23,7 +23,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\$</string>
+			<string>^\$</string>
 			<key>comment</key>
 			<string>Keywords</string>
 			<key>end</key>

@@ -11,7 +11,7 @@ $NETS
 
 PACKAGE ! VALUE; J1
 // <- entity.name.function.telesis
-PACKAGE ! VALUE; J1,
+PACKAGE ! VALUE; $J1,
 // <- entity.name.function.telesis
     J2
 //  ^ source.telesis
