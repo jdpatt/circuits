@@ -2,7 +2,7 @@
 ---
 name: Touchstone
 scopeName: source.touchstone
-fileTypes: [ts, touchstone, s2p, s3p, s4p]
+fileTypes: [ts, touchstone, s2p, s3p, s4p, s8p]
 
 patterns:
   - comment: Comment

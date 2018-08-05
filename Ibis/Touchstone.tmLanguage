@@ -9,6 +9,7 @@
 		<string>s2p</string>
 		<string>s3p</string>
 		<string>s4p</string>
+		<string>s8p</string>
 	</array>
 	<key>name</key>
 	<string>Touchstone</string>
