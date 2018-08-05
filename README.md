@@ -4,7 +4,7 @@ Sublime Text syntax highlighting and snippets for different electronic design re
 
 
 ## Installation
-Installation is performed via Package Control.
+Installation is performed via [Package Control](https://packagecontrol.io/packages/Circuits).
 
 ### Supported
 
