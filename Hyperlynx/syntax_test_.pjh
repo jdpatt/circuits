@@ -1,0 +1,9 @@
+// SYNTAX TEST "Packages/Circuits/hyperlynx/hyperlynx_project.tmLanguage"
+[POWER_INTEGRITY]
+// <- keyword.control.pjh
+CapAutoGrouping=0
+// <- source.pjh entity.name.pjh
+// ^^^^^^^^^^^^
+//             ^ source.pjh
+//              ^ source.pjh source.pjh
+AutoReferenceLayers=
