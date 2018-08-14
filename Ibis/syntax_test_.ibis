@@ -18,3 +18,4 @@
 //      ^^^^^^^^ source.ibis
 //                       ^^^ constant.language.ibis
 //                                      ^^ constant.language.ibis
+A1      DDR_CLK          SSTL          0.0010        10e-9          1
