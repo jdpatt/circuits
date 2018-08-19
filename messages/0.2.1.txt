@@ -1,0 +1,5 @@
+0.2.1: 
+  - Added highlighting for Hyperlynx Project files.
+  - Added s8p to the touchstone extension list.
+  - Fixed Keyin match issue (Issue #1)
+  - Added number matching for touchstone and ibis.
