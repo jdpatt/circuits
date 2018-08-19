@@ -19,3 +19,7 @@
 //                       ^^^ constant.language.ibis
 //                                      ^^ constant.language.ibis
 A1      DDR_CLK          SSTL          0.0010        10e-9          1
+[GND Clamp]
+|
+-1.80000V   -583.990mA   -568.133mA   -529.886mA
+-900.000mV   -76.5681mA   -92.6082mA   -64.0058mA
