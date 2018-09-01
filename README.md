@@ -22,6 +22,7 @@ Installation is performed via [Package Control](https://packagecontrol.io/packag
 - [Wavedrom](https://wavedrom.com/)
 
 ## Other Related Packages
+- Clojure is built into sublime and will work for any LISP netlist. (EDIF, Cadence, etc...)
 - [Spice Syntax Package](https://github.com/leoheck/sublime-spice)
 - [BSDL is a subset of VHDL](https://packagecontrol.io/packages/VHDL)
 
